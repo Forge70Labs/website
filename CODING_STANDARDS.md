@@ -150,6 +150,35 @@ The above is the "definition of done".
 
 ---
 
-Version 1.0
+## Feature Completion
+
+A feature is considered complete when:
+
+- All acceptance criteria are satisfied.
+- The code has been reviewed.
+- It builds without errors.
+- The feature has been committed to Git.
+- No known issues remain for the feature.
+
+---
+
+## Semantic HTML
+
+Use HTML elements according to their meaning.
+
+Prefer semantic elements such as:
+
+- header
+- main
+- section
+- article
+- nav
+- footer
+
+Avoid using HTML purely for visual layout.
+
+---
+
+Version 1.0.1
 
 Established July 2026
