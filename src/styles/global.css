@@ -70,6 +70,10 @@ body {
    Layout
    =========================================================== */
 
+html {
+    overflow-y: scroll;
+}
+
 .container {
     max-width: var(--content-width);
     margin: auto;
