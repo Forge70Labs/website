@@ -1,0 +1,166 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import appIcon from "../../assets/click-me-in/app-icon.png";
+import screenshotTempo from "../../assets/click-me-in/screenshot-tempo.png";
+import screenshotSettings from "../../assets/click-me-in/screenshot-settings.png";
+import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
+---
+
+<MainLayout>
+
+  <article>
+
+    <section class="hero">
+
+      <Image src={appIcon} alt="Click Me In app icon" width={120} height={120} class="app-icon" />
+
+      <h1>Click Me In</h1>
+
+      <p class="description">
+        A simple, flexible click track for drummers. An iOS app.
+      </p>
+
+    </section>
+
+    <section>
+
+      <h2>Designed for Musicians</h2>
+
+      <p class="description">
+        Click Me In is designed for musicians and drummers who want a
+        simple, flexible click track that's easy to configure and use
+        for practice, rehearsal, live performance, or recording.
+      </p>
+
+    </section>
+
+    <section>
+
+      <h2>Version 1.0 Features</h2>
+
+      <ul>
+        <li>Adjustable BPM</li>
+        <li>Tap tempo</li>
+        <li>Time signature selection</li>
+        <li>Multiple click sounds: Classic, Woodblock, Electronic</li>
+        <li>Adjustable click volume</li>
+        <li>Visual beat feedback</li>
+        <li>Configurable downbeat and regular-beat colors</li>
+        <li>Adjustable pulse intensity</li>
+        <li>Adjustable visual intensity</li>
+        <li>Audio and visual feedback controls</li>
+      </ul>
+
+    </section>
+
+    <section>
+
+      <h2>Built for Musicians</h2>
+
+      <p class="description">
+        Click Me In is built around the things a drummer actually needs
+        from a click track:
+      </p>
+
+      <ul>
+        <li>Simple to configure</li>
+        <li>Easy to see and hear</li>
+        <li>Useful for practice, rehearsal, live performance, and recording</li>
+        <li>Focused on the essentials, not clutter</li>
+      </ul>
+
+    </section>
+
+    <section>
+
+      <h2>Screenshots</h2>
+
+      <div class="screenshots">
+        <Image
+          src={screenshotTempo}
+          alt="Click Me In tempo screen with BPM dial, tap tempo, and time signature selection"
+          width={300}
+        />
+        <Image
+          src={screenshotSettings}
+          alt="Click Me In sound and visual settings, including click sound, colors, and intensity"
+          width={300}
+        />
+        <Image
+          src={screenshotPlaying}
+          alt="Click Me In running a click track with visual beat feedback"
+          width={300}
+        />
+      </div>
+
+    </section>
+
+    <section>
+
+      <h2>App Store</h2>
+
+      <p class="description">
+        Click Me In is currently submitted to Apple for App Review.
+        Coming soon to the App Store.
+      </p>
+
+    </section>
+
+    <section>
+
+      <h2>Privacy</h2>
+
+      <p class="description">
+        Click Me In is a local, offline app. It does not collect or
+        transmit personal information. Read the <a href="/privacy">Privacy Policy</a> for details.
+      </p>
+
+    </section>
+
+    <section>
+
+      <h2>Questions</h2>
+
+      <p class="description">
+        Have a question or feedback about Click Me In? <a href="/contact">Contact us</a>.
+      </p>
+
+    </section>
+
+  </article>
+
+</MainLayout>
+
+<style>
+.hero {
+    text-align: center;
+    padding-bottom: var(--spacing-xl);
+}
+
+.hero :global(.app-icon) {
+    border-radius: 22.5%;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero .description {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-text-secondary);
+}
+
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    justify-content: center;
+}
+
+.screenshots :global(img) {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 12px;
+    border: var(--border-standard);
+}
+</style>
