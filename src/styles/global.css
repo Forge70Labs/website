@@ -108,6 +108,7 @@ ul {
    =========================================================== */
 
 header {
+    background: #000;
     border-bottom: var(--border-standard);
 }
 
@@ -120,8 +121,15 @@ header > .container {
   padding-bottom: var(--spacing-lg);
 }
 
-header h2 {
-    margin: 0 0 var(--spacing-sm) 0;
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    display: block;
+    height: 84px;
+    width: auto;
 }
 
 nav {
@@ -131,18 +139,19 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--color-text-secondary);
+    color: #fff;
     font-weight: var(--font-weight-medium);
 }
 
 nav a:hover {
-    color: var(--color-text-hover);
+    color: #fff;
 }
 
 nav a[aria-current="page"] {
     text-decoration: underline;
+    text-decoration-color: #fff;
     text-underline-offset: 0.25em;
-    color: var(--color-text-hover);
+    color: #fff;
 }
 
 /* ===========================================================

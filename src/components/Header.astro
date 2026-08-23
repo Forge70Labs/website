@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets";
+import logo from "../assets/forge70-logo.jpeg";
+
 const { pathname } = Astro.url;
 
 const links = [
@@ -14,7 +17,9 @@ const isActive = (href: string) =>
 
 <header>
   <div class="container">
-    <h2>Forge70 Labs</h2>
+    <a href="/" class="logo">
+      <Image src={logo} alt="Forge70 Labs" height={84} width={341} />
+    </a>
 
     <nav>
       {links.map((link) => (
