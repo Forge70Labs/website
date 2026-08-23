@@ -139,6 +139,12 @@ nav a:hover {
     color: var(--color-text-hover);
 }
 
+nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    color: var(--color-text-hover);
+}
+
 /* ===========================================================
    Components - Footer
    =========================================================== */

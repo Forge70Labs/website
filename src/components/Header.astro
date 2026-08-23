@@ -1,12 +1,27 @@
+---
+const { pathname } = Astro.url;
+
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/applications", label: "Apps" },
+  { href: "/contact", label: "Contact" },
+];
+
+const isActive = (href: string) =>
+  href === "/" ? pathname === "/" : pathname.startsWith(href);
+---
+
 <header>
   <div class="container">
     <h2>Forge70 Labs</h2>
 
     <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/applications">Apps</a>
-      <a href="/contact">Contact</a>
+      {links.map((link) => (
+        <a href={link.href} aria-current={isActive(link.href) ? "page" : undefined}>
+          {link.label}
+        </a>
+      ))}
     </nav>
   </div>
 </header>
