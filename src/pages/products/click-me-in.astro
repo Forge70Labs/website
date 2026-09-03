@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
 import { Image } from "astro:assets";
+import appStoreBadge from "../../assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg";
 import appIcon from "../../assets/click-me-in/app-icon.png";
 import screenshotTempo from "../../assets/click-me-in/screenshot-tempo.png";
 import screenshotSettings from "../../assets/click-me-in/screenshot-settings.png";
@@ -101,8 +102,7 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
       <h2>App Store</h2>
 
       <p class="description">
-        Click Me In is currently submitted to Apple for App Review.
-        Coming soon to the App Store.
+        Click Me In is now available on the <a href="https://apps.apple.com/us/app/click-me-in/id6803708397">App Store</a>.
       </p>
 
     </section>
@@ -128,6 +128,16 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
 
     </section>
 
+    <section class="app-store-cta">
+      <a href="https://apps.apple.com/us/app/click-me-in/id6803708397">
+        <Image
+          src={appStoreBadge}
+          alt="Download Click Me In on the App Store"
+          width={200}
+        />
+      </a>
+    </section>
+
   </article>
 
 </MainLayout>
@@ -147,6 +157,10 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
     max-width: 600px;
     margin: 0 auto;
     color: var(--color-text-secondary);
+}
+
+.app-store-cta {
+    text-align: center;
 }
 
 .screenshots {
