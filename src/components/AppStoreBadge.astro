@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import badge from "../assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg";
+
+interface Props {
+  /** App Store product page to link to. */
+  href?: string;
+  /** Rendered badge width in px. The badge art is ~3:1, so 200 ≈ 67px tall (well above Apple's 40px minimum). */
+  width?: number;
+}
+
+const {
+  href = "https://apps.apple.com/us/app/click-me-in/id6803708397",
+  width = 200,
+} = Astro.props;
+---
+
+<a class="app-store-badge" href={href}>
+  <Image
+    src={badge}
+    alt="Download Click Me In on the App Store"
+    width={width}
+  />
+</a>
+
+<style>
+/*
+  Apple requires clear space of at least one quarter of the badge height on
+  every side. At width 200 the badge is ~67px tall, so 1.25rem (20px) of
+  padding keeps a comfortable margin above that minimum.
+*/
+.app-store-badge {
+  display: inline-block;
+  padding: 1.25rem;
+}
+
+.app-store-badge :global(img) {
+  display: block;
+  height: auto;
+}
+</style>

@@ -1,5 +1,30 @@
 <footer>
   <div class="container">
-    <p>© 2026 Forge70 Labs</p>
+    <p>
+      © 2026 Forge70 Labs
+      <span aria-hidden="true"> · </span>
+      <a href="/privacy">Privacy</a>
+      <span aria-hidden="true"> · </span>
+      <a href="/contact">Contact</a>
+    </p>
+
+    <p class="legal">
+      Apple and the Apple logo are trademarks of Apple Inc., registered in
+      the U.S. and other countries and regions. App Store is a service mark
+      of Apple Inc.
+    </p>
   </div>
 </footer>
+
+<style>
+footer a {
+  color: inherit;
+}
+
+footer .legal {
+  max-width: 640px;
+  margin: var(--spacing-sm) auto 0;
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+</style>

@@ -4,12 +4,23 @@
     <p class="description">
         Practical AI, mobile applications, and automation tools
         engineered to solve real-world problems through reliability,
-        simplicity, and decades of software engineering experience.
+        simplicity, and thoughtful design.
     </p>
 
-    <a class="button" href="/products/click-me-in">
-        Explore Click Me In
-    </a>
+    <div class="first-product">
+        <p class="eyebrow">Our first product</p>
+
+        <h2>Click Me In</h2>
+
+        <p class="description">
+            A simple, flexible click track for drummers. Built for
+            practice, rehearsal, live performance, and recording.
+        </p>
+
+        <a class="button" href="/products/click-me-in">
+            Learn more about Click Me In
+        </a>
+    </div>
 </section>
 
 <style>
@@ -27,6 +38,30 @@
     max-width: 700px;
     margin: 0 auto var(--spacing-xl);
     color: var(--color-text-secondary);
+}
+
+.first-product {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: var(--spacing-xl);
+    border-top: var(--border-standard);
+}
+
+.first-product .eyebrow {
+    margin: 0 0 var(--spacing-xs);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+.first-product h2 {
+    margin: 0 0 var(--spacing-sm);
+}
+
+.first-product .description {
+    margin-bottom: var(--spacing-lg);
 }
 
 .hero .button {

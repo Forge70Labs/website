@@ -1,15 +1,20 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import AppStoreBadge from "../components/AppStoreBadge.astro";
 ---
 
-<MainLayout>
+<MainLayout
+  title="Our Apps | Forge70 Labs"
+  description="Apps from Forge70 Labs. Click Me In is a simple, flexible click track for drummers, available on the App Store."
+>
 
   <article>
 
-    <h1>Forge70 Labs Applications</h1>
+    <h1>Our Apps</h1>
 
     <p class="description">
-      Our first product is on the way.
+      Forge70 Labs builds practical software designed to solve
+      real-world problems simply and reliably.
     </p>
 
     <section>
@@ -17,13 +22,15 @@ import MainLayout from "../layouts/MainLayout.astro";
       <h2>Click Me In</h2>
 
       <p class="description">
-        A simple, flexible click track for drummers. An iOS app,
-        currently submitted to Apple for App Review.
+        A simple, flexible click track for drummers. Built for practice,
+        rehearsal, live performance, and recording.
       </p>
 
       <p>
         <a href="/products/click-me-in">Learn more</a>
       </p>
+
+      <AppStoreBadge />
 
     </section>
 
