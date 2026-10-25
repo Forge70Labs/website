@@ -128,6 +128,28 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
 
     </section>
 
+    <section class="pro" aria-labelledby="pro-heading">
+
+      <h2 id="pro-heading">Click Me In Pro is coming soon</h2>
+
+      <p class="description">
+        A one-time upgrade (no subscription) that turns Click Me In into
+        your stage companion.
+      </p>
+
+      <ul>
+        <li><strong>Songs</strong> — keep a library of your songs with their tempo and time signature.</li>
+        <li><strong>Sets</strong> — arrange songs into set lists, in running order.</li>
+        <li><strong>Gigs</strong> — plan gigs with a venue, a date, and the sets you'll play.</li>
+        <li><strong>Perform</strong> — play a set or a whole gig song by song on a stage-ready screen, with each song's tempo and time signature loaded automatically.</li>
+      </ul>
+
+      <p class="pro-footnote">
+        Family Sharing supported. Your data stays on your device.
+      </p>
+
+    </section>
+
     <section>
 
       <h2>Privacy</h2>
@@ -179,6 +201,17 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
     flex-wrap: wrap;
     gap: var(--spacing-lg);
     justify-content: center;
+}
+
+.pro {
+    margin-top: var(--spacing-xxl);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border: var(--border-standard);
+    border-radius: 12px;
+}
+
+.pro-footnote {
+    color: var(--color-text-secondary);
 }
 
 .screenshots :global(img) {
