@@ -16,7 +16,12 @@
     --color-text-muted: #888;
     --color-border: #e5e5e5;
     --color-background: #fff;
-    
+    --color-emphasis: #000;
+
+    /* Radii */
+    --radius-card: 12px;
+    --radius-pill: 999px;
+
     /* Spacing */
   
     --spacing-xs: 0.5rem;

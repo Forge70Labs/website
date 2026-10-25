@@ -1,0 +1,80 @@
+---
+import ComingSoonBadge from "./ComingSoonBadge.astro";
+import ProFeatureIcon from "./ProFeatureIcon.astro";
+import { proFeatures } from "./proFeatures";
+---
+
+<section class="pro" aria-labelledby="pro-heading">
+
+  <ComingSoonBadge />
+
+  <h2 id="pro-heading">Click Me In Pro is coming soon</h2>
+
+  <p class="description">
+    A one-time upgrade (no subscription) that turns Click Me In into your
+    stage companion.
+  </p>
+
+  <ul class="pro-cards">
+    {proFeatures.map((feature) => (
+      <li class="pro-card">
+        <ProFeatureIcon name={feature.icon} size={28} />
+        <h3>{feature.title}</h3>
+        <p>{feature.description}</p>
+      </li>
+    ))}
+  </ul>
+
+  <p class="pro-footnote">
+    Family Sharing supported. Your data stays on your device.
+  </p>
+
+</section>
+
+<style>
+.pro {
+    margin-top: var(--spacing-xxl);
+}
+
+.pro h2 {
+    margin-top: var(--spacing-sm);
+}
+
+.pro-cards {
+    list-style: none;
+    margin: var(--spacing-xl) 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+
+.pro-card {
+    padding: var(--spacing-lg);
+    border: var(--border-standard);
+    border-radius: var(--radius-card);
+    color: var(--color-text);
+}
+
+.pro-card h3 {
+    margin: var(--spacing-sm) 0 var(--spacing-xs);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+}
+
+.pro-card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+.pro-footnote {
+    color: var(--color-text-secondary);
+}
+
+/* Matches the site's mobile breakpoint in global.css */
+@media (max-width: 768px) {
+    .pro-cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
