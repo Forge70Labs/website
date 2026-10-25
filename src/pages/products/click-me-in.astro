@@ -2,6 +2,7 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import AppStoreBadge from "../../components/AppStoreBadge.astro";
+import ProSection from "../../components/pro/ProSection.astro";
 import appIcon from "../../assets/click-me-in/app-icon.png";
 import screenshotTempo from "../../assets/click-me-in/screenshot-tempo.png";
 import screenshotSettings from "../../assets/click-me-in/screenshot-settings.png";
@@ -128,6 +129,8 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
 
     </section>
 
+    <ProSection />
+
     <section>
 
       <h2>Privacy</h2>
@@ -185,7 +188,7 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
     width: 100%;
     max-width: 260px;
     height: auto;
-    border-radius: 12px;
+    border-radius: var(--radius-card);
     border: var(--border-standard);
 }
 </style>
