@@ -1,18 +1,24 @@
 ---
-import ComingSoonBadge from "./ComingSoonBadge.astro";
+import PillBadge from "./PillBadge.astro";
 import ProFeatureIcon from "./ProFeatureIcon.astro";
 import { proFeatures } from "./proFeatures";
+import { CLICK_ME_IN_APP_STORE_URL } from "../../constants";
 ---
 
 <section class="pro" aria-labelledby="pro-heading">
 
-  <ComingSoonBadge />
+  <PillBadge>New</PillBadge>
 
-  <h2 id="pro-heading">Click Me In Pro is coming soon</h2>
+  <h2 id="pro-heading">Click Me In Pro is now available</h2>
 
   <p class="description">
     A one-time upgrade (no subscription) that turns Click Me In into your
     stage companion.
+  </p>
+
+  <p class="description">
+    Click Me In Pro is a one-time in-app purchase inside the free Click Me
+    In app. Get it on the <a href={CLICK_ME_IN_APP_STORE_URL}>App Store</a>.
   </p>
 
   <ul class="pro-cards">

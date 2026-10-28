@@ -1,5 +1,10 @@
 # Changelog
 
+## V1.3.0 - Click Me In Pro Available
+
+### Changed
+- Click Me In Pro section shows Pro as available: "New" badge in place of "Coming soon", and a line that Pro is a one-time in-app purchase inside the free app, linking to the App Store
+
 ## V1.2.0 - Click Me In Pro Privacy Policy
 
 ### Changed
