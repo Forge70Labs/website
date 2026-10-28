@@ -4,6 +4,10 @@
 
 ### Changed
 - Click Me In Pro section shows Pro as available: "New" badge in place of "Coming soon", and a line that Pro is a one-time in-app purchase inside the free app, linking to the App Store
+- Click Me In screenshots replaced with five 1.2.0 screenshots (Perform, Unlock Pro, main screen, set list, song library)
+
+### Removed
+- "What's New in 1.1.2" section and the version number in the Features heading
 
 ## V1.2.0 - Click Me In Pro Privacy Policy
 
