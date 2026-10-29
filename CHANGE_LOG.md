@@ -8,6 +8,7 @@
 - Pro section moved directly under the opening paragraph, with a tighter intro
 - Features list adds Bluetooth and hearing-aid audio handling, visual beat on audio loss, and VoiceOver and high-contrast support
 - "Built for Musicians" renamed to "Why Click Me In", with a musician-wide intro
+- "Designed for Musicians" intro says "musicians" instead of "musicians and drummers"
 
 ### Removed
 - "What's New in 1.1.2" section and the version number in the Features heading
