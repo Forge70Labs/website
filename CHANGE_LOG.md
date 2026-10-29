@@ -9,6 +9,7 @@
 - Features list adds Bluetooth and hearing-aid audio handling, visual beat on audio loss, and VoiceOver and high-contrast support
 - "Built for Musicians" renamed to "Why Click Me In", with a musician-wide intro
 - "Designed for Musicians" intro says "musicians" instead of "musicians and drummers"
+- Click Me In page subtitle says "for musicians" instead of "for drummers"
 
 ### Removed
 - "What's New in 1.1.2" section and the version number in the Features heading
