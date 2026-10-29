@@ -4,14 +4,16 @@ import { Image } from "astro:assets";
 import AppStoreBadge from "../../components/AppStoreBadge.astro";
 import ProSection from "../../components/pro/ProSection.astro";
 import appIcon from "../../assets/click-me-in/app-icon.png";
-import screenshotTempo from "../../assets/click-me-in/screenshot-tempo.png";
-import screenshotSettings from "../../assets/click-me-in/screenshot-settings.png";
-import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
+import screenshotPerform from "../../assets/click-me-in/screenshot-1.2.0-perform.png";
+import screenshotUnlockPro from "../../assets/click-me-in/screenshot-1.2.0-unlock-pro.png";
+import screenshotMain from "../../assets/click-me-in/screenshot-1.2.0-main.png";
+import screenshotSet from "../../assets/click-me-in/screenshot-1.2.0-set.png";
+import screenshotSongs from "../../assets/click-me-in/screenshot-1.2.0-songs.png";
 ---
 
 <MainLayout
-  title="Click Me In — A Simple Click Track for Drummers | Forge70 Labs"
-  description="Click Me In is a simple, flexible click track for drummers, designed for practice, rehearsal, live performance, and recording."
+  title="Click Me In — A Simple Click Track for Musicians | Forge70 Labs"
+  description="Click Me In is a simple, flexible click track for musicians, designed for practice, rehearsal, live performance, and recording."
 >
 
   <article>
@@ -23,7 +25,7 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
       <h1>Click Me In</h1>
 
       <p class="description">
-        A simple, flexible click track for drummers. An iOS app.
+        A simple, flexible click track for musicians. An iOS app.
       </p>
 
     </section>
@@ -37,16 +39,18 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
       <h2>Designed for Musicians</h2>
 
       <p class="description">
-        Click Me In is designed for musicians and drummers who want a
-        simple, flexible click track that's easy to configure and use
-        for practice, rehearsal, live performance, or recording.
+        Click Me In is designed for musicians who want a simple, flexible
+        click track that's easy to configure and use for practice,
+        rehearsal, live performance, or recording.
       </p>
 
     </section>
 
+    <ProSection />
+
     <section>
 
-      <h2>Version 1.1.2 Features</h2>
+      <h2>Features</h2>
 
       <ul>
         <li>Adjustable BPM with a large, easy-to-read tempo display</li>
@@ -61,39 +65,20 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
         <li>Audio and visual feedback controls</li>
         <li>Light, Dark, or Follow OS theme</li>
         <li>Automatic audio recovery after phone calls, Siri, and alarms</li>
-        <li>Support for the largest accessibility text sizes</li>
+        <li>Keeps clicking when Bluetooth headphones or hearing aids connect, and picks back up when they reconnect</li>
+        <li>Visual beat keeps going if audio output is lost, with an on-screen warning</li>
+        <li>VoiceOver support, high-contrast colors, and the largest accessibility text sizes</li>
       </ul>
 
     </section>
 
     <section>
 
-      <h2>What's New in 1.1.2</h2>
-
-      <ul>
-        <li>Classic, Woodblock, and Electronic sound buttons and the Pulse Intensity buttons resize correctly at larger accessibility text sizes</li>
-        <li>Fixed a rare audio glitch the very first time the app was opened after installing it</li>
-      </ul>
+      <h2>Why Click Me In</h2>
 
       <p class="description">
-        Version 1.1.1 enlarged the color swatch tap targets, adapted the
-        tempo and time signature controls to the largest accessibility text
-        sizes, and kept the tempo "Set" button reachable above the keyboard
-        in landscape.<br />
-        Version 1.1.0 added a Settings menu with theme selection and a
-        dedicated Visual Settings screen, a larger tempo display and beat
-        pulse, and automatic recovery of audio after interruptions.
-      </p>
-
-    </section>
-
-    <section>
-
-      <h2>Built for Musicians</h2>
-
-      <p class="description">
-        Click Me In is built around the things a drummer actually needs
-        from a click track:
+        Click Me In is built around what musicians actually need from a
+        click track:
       </p>
 
       <ul>
@@ -111,25 +96,33 @@ import screenshotPlaying from "../../assets/click-me-in/screenshot-playing.png";
 
       <div class="screenshots">
         <Image
-          src={screenshotTempo}
-          alt="Click Me In main screen with BPM dial, tap tempo, time signature selection, and sound settings"
+          src={screenshotPerform}
+          alt="Click Me In Pro Perform screen playing a song at 112 BPM in 4/4, showing song 1 of 3 in set 1 of 2 with the next song up and Stop, Next, Previous, and Exit buttons"
           width={300}
         />
         <Image
-          src={screenshotPlaying}
-          alt="Click Me In running a click track with visual beat feedback"
+          src={screenshotUnlockPro}
+          alt="Unlock Pro screen listing the Perform, Songs, Sets, and Gigs features of the one-time Click Me In Pro purchase"
           width={300}
         />
         <Image
-          src={screenshotSettings}
-          alt="Click Me In Settings screen with Visual Settings and Theme options"
+          src={screenshotMain}
+          alt="Click Me In main screen with BPM dial, tap tempo, time signature selection, Play button, Songs, Sets, and Gigs buttons marked Pro, and sound settings"
+          width={300}
+        />
+        <Image
+          src={screenshotSet}
+          alt="A set list in Click Me In Pro showing three songs in running order with a Play button"
+          width={300}
+        />
+        <Image
+          src={screenshotSongs}
+          alt="Click Me In Pro song library with a search field and a list of songs"
           width={300}
         />
       </div>
 
     </section>
-
-    <ProSection />
 
     <section>
 
