@@ -5,6 +5,9 @@
 ### Changed
 - Click Me In Pro section shows Pro as available: "New" badge in place of "Coming soon", and a line that Pro is a one-time in-app purchase inside the free app, linking to the App Store
 - Click Me In screenshots replaced with five 1.2.0 screenshots (Perform, Unlock Pro, main screen, set list, song library)
+- Pro section moved directly under the opening paragraph, with a tighter intro
+- Features list adds Bluetooth and hearing-aid audio handling, visual beat on audio loss, and VoiceOver and high-contrast support
+- "Built for Musicians" renamed to "Why Click Me In", with a musician-wide intro
 
 ### Removed
 - "What's New in 1.1.2" section and the version number in the Features heading
