@@ -1,5 +1,14 @@
 # Changelog
 
+## V1.3.1 - Click Me In 1.2.1 Screenshots
+
+### Changed
+- Click Me In main-screen and Unlock Pro screenshots replaced with 1.2.1 versions: Pro badges now sit beneath the Songs, Sets, and Gigs labels, and the unlock screen shows a Family Sharing hint under Restore Purchases
+- Pro section says family members can tap Restore Purchases to unlock with Family Sharing
+
+### Removed
+- 1.2.0 main-screen and Unlock Pro screenshots
+
 ## V1.3.0 - Click Me In Pro Available
 
 ### Changed
