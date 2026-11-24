@@ -1,5 +1,10 @@
 # Changelog
 
+## V1.3.2 - Click Me In 1.2.4 Accessibility
+
+### Changed
+- Click Me In Features list says layouts adapt to the largest accessibility text sizes, reflecting Click Me In 1.2.4's improved large-text support
+
 ## V1.3.1 - Click Me In 1.2.1 Screenshots
 
 ### Changed
